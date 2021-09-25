@@ -67,6 +67,8 @@ sortearButton.addEventListener("click", function () {
 
     if (tentativas == 20) {
         sortearButton.setAttribute("disabled", "disabled")
+        sortearButton.classList.remove("sortear-button");
+        sortearButton.classList.add("disableButton")
     }
 
     // console.log(numeros50[contador])
@@ -75,44 +77,44 @@ sortearButton.addEventListener("click", function () {
     contador++
 })
 
-function openModal(mn){
+function openModal(mn) {
     let modal = document.getElementById(mn);
 
     if (typeof modal == 'undefined' || modal === null)
         return;
 
-        modal.style.display = 'Block';
+    modal.style.display = 'Block';
 
 
 }
 
-function closeModal(mn){
+function closeModal(mn) {
     let modal = document.getElementById(mn);
 
     if (typeof modal == 'undefined' || modal === null)
         return;
-    
+
     modal.style.display = 'none';
 
 }
 
-function openModal1(mn){
+function openModal1(mn) {
     let modal = document.getElementById(mn);
 
     if (typeof modal == 'undefined' || modal === null)
         return;
 
-        modal.style.display = 'Block';
+    modal.style.display = 'Block';
 
 
 }
 
-function closeModal1(mn){
+function closeModal1(mn) {
     let modal = document.getElementById(mn);
 
     if (typeof modal == 'undefined' || modal === null)
         return;
-    
+
     modal.style.display = 'none';
 
 }
