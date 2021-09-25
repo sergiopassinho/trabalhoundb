@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Bingo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class='container'>
+        <div class='card'>
+            <h1>Bingo</h1>
+            <div class="justify-center">
+                <a href="jogo.html"><button class="butao">Jogar</button></a>
+                <button class="butao" onclick="openModal('dv_modal');">Instruções</button>
+                <button class="butao" onclick="openModal1('dv_modal1');">Sobre</button>
+
+            </div>
+
+        </div>
+    </div>
+    <div id="dv_modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                MODO DE FUNCIONAMENTO
+            </div>
+            <div class="modal-body">
+                1.Clique em jogar para iniciar o Bingo. <br>
+                2.Ao entrar na tela de jogo, clique em 'Sortear' para começar a exibição dos números. <br>
+                3.Quando o número sorteado estiver em sua cartela, a mesma será marcada com a cor verde. <br>
+                4.Clique repetidas vezes no botão 'Sortear' até concluir a sua cartela. <br>
+                5.Bom divertimento ! 
+            </div>
+            <div class="modal-footer">
+                <button class="btn" onclick="closeModal('dv_modal');">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="dv_modal1" class="modal1">
+        <div class="modal-content1">
+            <div class="modal-header1">
+                Sobre
+            </div>
+            <div class="modal-body1">
+                Inicialmente projetado para ser executado no terminal através da linguagem de programação Python, o programa precisou ser adaptado para funcionar no navegador, dessa forma, outras tecnologias precisaram ser implementadas no projeto, como HTML,CSS e JavaScript. <br>
+                Este trabalho foi realizado por alunos dos cursos de Engenharia de Software e Sistemas da Informação da Unidade de Ensino Superior Dom Bosco(UNDB), no intuito de representar a experiência do usuário ao jogar bingo no mundo virtual, utilizando recursos de automatização de uma página Web. <br>
+                Créditos:<br> Sérgio Passinho<br> Leonardo Garreto <br>Lucas Melonio <br>Danyo Guímel
+                    
+                
+            </div>
+            <div class="modal-footer1">
+                <button class="btn" onclick="closeModal1('dv_modal1');">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
