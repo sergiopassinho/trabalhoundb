@@ -57,7 +57,7 @@ tentativas = 0;
 
 sortearButton.addEventListener("click", function () {
     // Pegar numero sorteado
-
+    let modal = document.getElementById('modal-bingo');
     let numeroSorteado = numeros50[contador]
     if (cartela.includes(numeroSorteado)) {
         tentativas++;
@@ -70,6 +70,7 @@ sortearButton.addEventListener("click", function () {
         sortearButton.setAttribute("disabled", "disabled")
         sortearButton.classList.remove("sortear-button");
         sortearButton.classList.add("disableButton")
+        modal.style.display = 'Block';
     }
     else {
 
