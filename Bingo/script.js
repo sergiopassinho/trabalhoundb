@@ -1,6 +1,7 @@
 const sortearButton = document.querySelector('.sortear-button');
 let itemsDisplay = document.querySelectorAll(".numeros-cartela li")
 let sorteioDisplay = document.querySelector(".numero")
+let mensagem = document.querySelector(".mensagem")
 
 // Criacao de listas, contadores
 let numeroSorteado = 0;
@@ -70,11 +71,13 @@ sortearButton.addEventListener("click", function () {
         sortearButton.classList.remove("sortear-button");
         sortearButton.classList.add("disableButton")
     }
+    else {
 
-    // console.log(numeros50[contador])
-    numerosSorteados.push(numeroSorteado);
-    sorteioDisplay.textContent = numeroSorteado
-    contador++
+        // console.log(numeros50[contador])
+        numerosSorteados.push(numeroSorteado);
+        sorteioDisplay.textContent = numeroSorteado
+        contador++
+    }
 })
 
 function openModal(mn) {

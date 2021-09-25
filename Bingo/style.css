@@ -26,6 +26,9 @@ body{
     /* align-items: center; */
     gap: 20px;
     height: 600px;
+    width: 400px;
+    max-width: 400px;
+    max-height: 700px;
 }
 
 .numeros-cartela {
@@ -113,6 +116,7 @@ li {
     cursor: pointer;
     color: aliceblue;
     margin: 0 auto;
+    display: inline-block;
 
 }
 
