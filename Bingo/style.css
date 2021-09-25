@@ -176,7 +176,7 @@ a {
     background-color: #ccc;
     line-height: 1.5;
     font-size: 15pt;
-    
+    text-align: left;
 }
 
 .modal-footer {
@@ -219,7 +219,7 @@ a {
 
 .modal-header1, .modal-body1, .modal-footer1 {
     padding: 10px;
-    text-align: center;
+    text-align: left;
 }
 
 .modal-header1 {
@@ -238,4 +238,9 @@ a {
 
 .modal-footer1 {
     background-color: #ccc;
+ }
+
+ .center {
+    padding-top: 10px;
+    text-align: center;
  }
